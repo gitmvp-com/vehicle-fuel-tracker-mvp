@@ -1,0 +1,31 @@
+{
+  "name": "Vehicle",
+  "type": "object",
+  "properties": {
+    "make": {
+      "type": "string",
+      "description": "Car manufacturer"
+    },
+    "model": {
+      "type": "string",
+      "description": "Car model"
+    },
+    "year": {
+      "type": "integer",
+      "description": "Manufacturing year"
+    },
+    "color": {
+      "type": "string",
+      "description": "Vehicle color"
+    },
+    "current_mileage": {
+      "type": "number",
+      "description": "Current odometer reading"
+    }
+  },
+  "required": [
+    "make",
+    "model",
+    "year"
+  ]
+}
