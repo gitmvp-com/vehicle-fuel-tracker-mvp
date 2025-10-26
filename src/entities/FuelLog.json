@@ -1,0 +1,55 @@
+{
+  "name": "FuelLog",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string",
+      "description": "Reference to vehicle"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Fill-up date"
+    },
+    "mileage": {
+      "type": "number",
+      "description": "Odometer reading"
+    },
+    "gallons": {
+      "type": "number",
+      "description": "Gallons filled"
+    },
+    "cost_per_gallon": {
+      "type": "number",
+      "description": "Price per gallon"
+    },
+    "total_cost": {
+      "type": "number",
+      "description": "Total fill-up cost"
+    },
+    "fuel_type": {
+      "type": "string",
+      "enum": [
+        "regular",
+        "mid_grade",
+        "premium",
+        "diesel",
+        "electric"
+      ],
+      "description": "Type of fuel"
+    },
+    "station": {
+      "type": "string",
+      "description": "Gas station name"
+    },
+    "full_tank": {
+      "type": "boolean",
+      "description": "Was it a full tank"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "date",
+    "mileage"
+  ]
+}
